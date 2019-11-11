@@ -1,0 +1,160 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 2 -S AIC -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     Weka_10_Best_Normalize
+Instances:    12660
+Attributes:   47
+              1554
+              1555
+              1175
+              1560
+              1561
+              792
+              794
+              793
+              1176
+              1566
+              1177
+              1319
+              1703
+              1321
+              1322
+              1707
+              1708
+              1470
+              1471
+              1602
+              1603
+              1223
+              840
+              1224
+              1225
+              839
+              841
+              1613
+              1367
+              1751
+              1752
+              1369
+              1370
+              1506
+              1507
+              1512
+              1513
+              1518
+              1519
+              888
+              1271
+              1272
+              1273
+              1274
+              1660
+              1661
+              Class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=47 #classindex=46
+Network structure (nodes followed by parents)
+1554(14): Class 
+1555(13): Class 1554 
+1175(11): Class 1555 
+1560(13): Class 1175 
+1561(14): Class 1560 
+792(11): Class 1561 
+794(11): Class 792 
+793(12): Class 792 
+1176(11): Class 1175 
+1566(12): Class 1555 
+1177(10): Class 1176 
+1319(13): Class 1175 
+1703(16): Class 792 
+1321(11): Class 1177 
+1322(12): Class 1321 
+1707(16): Class 1703 
+1708(17): Class 1707 
+1470(10): Class 1566 
+1471(12): Class 1470 
+1602(12): Class 1554 
+1603(14): Class 1554 
+1223(12): Class 1175 
+840(15): Class 792 
+1224(14): Class 1176 
+1225(11): Class 1177 
+839(13): Class 840 
+841(12): Class 840 
+1613(13): Class 1566 
+1367(12): Class 1319 
+1751(13): Class 1703 
+1752(12): Class 1751 
+1369(10): Class 1321 
+1370(10): Class 1322 
+1506(14): Class 1555 
+1507(14): Class 1506 
+1512(13): Class 1560 
+1513(15): Class 1512 
+1518(12): Class 1471 
+1519(12): Class 1518 
+888(12): Class 840 
+1271(13): Class 1319 
+1272(12): Class 1224 
+1273(12): Class 1225 
+1274(11): Class 1322 
+1660(14): Class 1613 
+1661(17): Class 1660 
+Class(10): 
+LogScore Bayes: -659741.7335921016
+LogScore BDeu: -1156713.8230069347
+LogScore MDL: -1041883.1859101688
+LogScore ENTROPY: -727423.8212717201
+LogScore AIC: -794002.8212717213
+
+
+Time taken to build model: 1.4 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.18 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3190               83.9916 %
+Incorrectly Classified Instances       608               16.0084 %
+Kappa statistic                          0.8147
+Mean absolute error                      0.0342
+Root mean squared error                  0.1623
+Relative absolute error                 19.721  %
+Root relative squared error             55.1397 %
+Total Number of Instances             3798     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.636    0.052    0.603      0.636    0.619      0.570    0.942     0.641     0
+                 0.676    0.056    0.676      0.676    0.676      0.620    0.944     0.754     1
+                 0.825    0.002    0.937      0.825    0.878      0.876    0.983     0.914     2
+                 0.869    0.002    0.977      0.869    0.920      0.913    0.996     0.978     3
+                 0.908    0.041    0.816      0.908    0.860      0.831    0.983     0.941     4
+                 0.949    0.014    0.932      0.949    0.940      0.928    0.996     0.985     5
+                 0.889    0.004    0.933      0.889    0.910      0.905    0.992     0.960     6
+                 0.694    0.001    0.909      0.694    0.787      0.791    0.975     0.817     7
+                 0.911    0.012    0.936      0.911    0.923      0.909    0.993     0.975     8
+                 0.944    0.001    0.977      0.944    0.960      0.960    0.999     0.986     9
+Weighted Avg.    0.840    0.026    0.845      0.840    0.841      0.817    0.979     0.896     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 269 120   0   2  15   6   1   1   9   0 |   a = 0
+ 125 377   3   1  31  11   3   1   6   0 |   b = 1
+   8   8 104   1   1   1   0   2   1   0 |   c = 2
+   9   6   0 344  33   0   2   0   0   2 |   d = 3
+   6  28   0   3 572  12   0   1   8   0 |   e = 4
+   6   1   0   0  18 615   1   0   7   0 |   f = 5
+   9   3   0   0   2   8 208   0   4   0 |   g = 6
+   6   6   4   0   3   1   0  50   2   0 |   h = 7
+   8   8   0   1  25   5   8   0 566   0 |   i = 8
+   0   1   0   0   1   1   0   0   2  85 |   j = 9

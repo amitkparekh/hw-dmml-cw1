@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 2 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     Weka_2_Best_Normalize
+Instances:    12660
+Attributes:   15
+              1506
+              1273
+              1224
+              840
+              1225
+              1708
+              1518
+              1519
+              1554
+              1555
+              1271
+              1561
+              1660
+              1471
+              Class
+Test mode:    split 70.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=15 #classindex=14
+Network structure (nodes followed by parents)
+1506(14): Class 
+1273(12): Class 1506 
+1224(14): Class 1273 
+840(15): Class 1224 
+1225(11): Class 1273 
+1708(17): Class 840 
+1518(12): Class 1708 
+1519(12): Class 1518 
+1554(14): Class 1506 
+1555(13): Class 1554 
+1271(13): Class 1224 
+1561(14): Class 1224 
+1660(14): Class 1708 
+1471(12): Class 1518 
+Class(10): 
+LogScore Bayes: -266428.98302629835
+LogScore BDeu: -437781.3090742229
+LogScore MDL: -395169.3307806868
+LogScore ENTROPY: -288809.8115284743
+LogScore AIC: -311328.81152847386
+
+
+Time taken to build model: 0.21 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.06 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3059               80.5424 %
+Incorrectly Classified Instances       739               19.4576 %
+Kappa statistic                          0.7749
+Mean absolute error                      0.044 
+Root mean squared error                  0.167 
+Relative absolute error                 25.4294 %
+Root relative squared error             56.7516 %
+Total Number of Instances             3798     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.513    0.057    0.528      0.513    0.520      0.461    0.917     0.550     0
+                 0.642    0.070    0.611      0.642    0.626      0.560    0.934     0.665     1
+                 0.833    0.003    0.905      0.833    0.868      0.864    0.988     0.917     2
+                 0.861    0.012    0.893      0.861    0.877      0.863    0.991     0.950     3
+                 0.846    0.034    0.833      0.846    0.839      0.807    0.975     0.920     4
+                 0.935    0.017    0.921      0.935    0.928      0.913    0.995     0.983     5
+                 0.885    0.005    0.916      0.885    0.900      0.894    0.991     0.957     6
+                 0.708    0.002    0.864      0.708    0.779      0.779    0.985     0.823     7
+                 0.907    0.021    0.892      0.907    0.899      0.880    0.990     0.965     8
+                 0.867    0.003    0.876      0.867    0.872      0.868    0.998     0.951     9
+Weighted Avg.    0.805    0.030    0.806      0.805    0.806      0.776    0.972     0.864     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 217 158   0   6  14   9   4   2  12   1 |   a = 0
+ 140 358   3   8  25   9   3   0  11   1 |   b = 1
+   6   6 105   1   1   0   1   5   1   0 |   c = 2
+   9   7   1 341  34   1   1   0   0   2 |   d = 3
+  13  35   1  23 533  10   0   1  13   1 |   e = 4
+   8   3   0   0  14 606   3   0  11   3 |   f = 5
+   1   5   0   0   0   3 207   0  15   3 |   g = 6
+   6   6   5   1   2   0   0  51   1   0 |   h = 7
+  11   7   1   1  14  17   7   0 563   0 |   i = 8
+   0   1   0   1   3   3   0   0   4  78 |   j = 9
+

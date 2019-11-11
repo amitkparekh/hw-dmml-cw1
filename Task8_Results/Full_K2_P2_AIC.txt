@@ -1,0 +1,42 @@
+
+2 PARENT
+
+=== Summary ===
+
+Correctly Classified Instances        3178               83.6756 %
+Incorrectly Classified Instances       620               16.3244 %
+Kappa statistic                          0.8107
+Mean absolute error                      0.0326
+Root mean squared error                  0.1789
+Relative absolute error                 18.8122 %
+Root relative squared error             60.7942 %
+Total Number of Instances             3798     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.695    0.045    0.661      0.695    0.677      0.636    0.948     0.698     0
+                 0.837    0.092    0.610      0.837    0.706      0.658    0.941     0.680     1
+                 0.651    0.000    1.000      0.651    0.788      0.802    0.990     0.923     2
+                 0.899    0.000    1.000      0.899    0.947      0.943    0.992     0.981     3
+                 0.829    0.012    0.932      0.829    0.877      0.857    0.985     0.946     4
+                 0.884    0.004    0.978      0.884    0.929      0.917    0.994     0.980     5
+                 0.833    0.000    0.995      0.833    0.907      0.905    0.989     0.970     6
+                 0.542    0.001    0.951      0.542    0.690      0.714    0.991     0.860     7
+                 0.937    0.037    0.833      0.937    0.882      0.859    0.989     0.935     8
+                 0.756    0.000    1.000      0.756    0.861      0.867    0.988     0.964     9
+Weighted Avg.    0.837    0.027    0.861      0.837    0.842      0.821    0.978     0.886     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 294 119   0   0   4   0   0   0   6   0 |   a = 0
+  70 467   0   0   8   0   0   0  13   0 |   b = 1
+  10  29  82   0   2   0   0   2   1   0 |   c = 2
+   9  21   0 356   5   1   0   0   4   0 |   d = 3
+  22  42   0   0 522   6   0   0  38   0 |   e = 4
+  20  26   0   0   1 573   0   0  28   0 |   f = 5
+   1  19   0   0   3   2 195   0  14   0 |   g = 6
+   3  12   0   0   8   0   0  39  10   0 |   h = 7
+   9  23   0   0   4   3   0   0 582   0 |   i = 8
+   7   7   0   0   3   1   1   0   3  68 |   j = 9
